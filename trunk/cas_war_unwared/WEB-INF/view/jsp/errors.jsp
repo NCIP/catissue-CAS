@@ -6,4 +6,4 @@
 			   There was an error trying to complete your request.  Please notify your support desk or try again.
 			</p>
 		</div>
-<jsp:directive.include file="default/ui/includes/bottom.jsp" />
+<jsp:directive.include file="default/ui/includes/bottom.jsp"/>
