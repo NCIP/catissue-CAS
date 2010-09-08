@@ -241,7 +241,7 @@
 
 										<td colspan="3" align="left" class="showhide1">
 												<form:form method="post" id="fm1" commandName="${commandName}" htmlEscape="true">
-													<form:errors path="*" cssClass="errors" id="status" element="div" />
+													<form:errors path="*" class="errors" id="status" element="div" />
 													<table width="98%" border="0" cellpadding="4" cellspacing="0">
 														<tr>
 															<td class="black_ar">
