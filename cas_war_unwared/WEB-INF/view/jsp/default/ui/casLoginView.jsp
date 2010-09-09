@@ -105,7 +105,7 @@
 			</tr>
 			<tr>
 				<td width="80%" align="right" valign="top">
-					<table border="0" cellspacing="0" cellpadding="0">
+					<table border="0" cellspacing="0" cellpadding="0" width="100%">
 						<tr>
 							<td align="right"><a href="<spring:message code="siteman.url" />"><img
 								border="0" src="images/uIEnhancementImages/siteman_logo.gif"
