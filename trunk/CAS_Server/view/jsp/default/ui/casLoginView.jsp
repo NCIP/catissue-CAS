@@ -51,7 +51,7 @@
 				<link rel="stylesheet" type="text/css" href="css/catissue_suite.css" />
            </c:otherwise>
         </c:choose>
-		
+
 		<style>
 			.norepeatbkgnImg
 			{
@@ -73,7 +73,7 @@
 						<tr>
 							<td>
 								<img src="images/uIEnhancementImages/catissue_suite_logo.jpg"
-								alt="caTissue Suite" width="236" height="75" />	
+								alt="caTissue Suite" width="236" height="75" />
 							</td>
 						</tr>
 					</table>
@@ -102,7 +102,7 @@
 											href="/catissuecore/ReportProblem.do?operation=add" class="white"> <img
 											src="images/uIEnhancementImages/ic_report.gif" alt="Report Problems" width="15"
 											height="12" border="0" hspace="2" vspace="0"><spring:message code="app.reportedProblems" />
-										</a>&nbsp; 
+										</a>&nbsp;
 										<a
 											href="/catissuecore/ContactUs.do?PAGE_TITLE_KEY=app.contactUs&FILE_NAME_KEY=app.contactUs.file"
 											class="white"> <img
@@ -127,11 +127,9 @@
 					<table border="0" cellspacing="0" cellpadding="0" width="100%">
 						<tr>
 							<td align="right">
-								<a href="<spring:message code="siteman.url" />">
 									<img
-									border="0" src="images/uIEnhancementImages/siteman_logo.gif"
+									border="0" src="images/uIEnhancementImages/institution_logo.gif"
 									alt="Siteman Cancer Center" width="198" height="54" vspace="5" />
-								</a>
 								<img
 									border="0" src="images/uIEnhancementImages/or_dot.gif"  alt="Divider line" width="1"
 									height="50" hspace="10" vspace="5" />
@@ -251,12 +249,12 @@
 							<td width="49%" rowspan="3" align="center" valign="top">
 								<img
 									src="images/uIEnhancementImages/concept_image_s.jpg"
-									alt="caTissue Suite" width="450" height="470" 
+									alt="caTissue Suite" width="450" height="470"
 								/>
 							</td>
 							<td width="0%" rowspan="3" valign="top">
 								<img
-									src="images/uIEnhancementImages/sep_right.gif" width="8" height="458" 
+									src="images/uIEnhancementImages/sep_right.gif" width="8" height="458"
 								/>
 							</td>
 							<td width="28%" align="center" valign="top"><br />
@@ -276,7 +274,7 @@
 													<td>
 														<img
 														src="images/uIEnhancementImages/table_title_corner.gif"
-														alt="Title" width="31" height="24" 
+														alt="Title" width="31" height="24"
 														/>
 													</td>
 												</tr>
@@ -284,10 +282,10 @@
 											</td>
 										</tr>
 										<tr>
-										<td colspan="3" align="left" class="showhide1">											
+										<td colspan="3" align="left" class="showhide1">
 												<form:form method="post" id="fm1" commandName="${commandName}" htmlEscape="true" class="whitetable_bg">
-													
-													<form:errors path="*" class="errors" id="status" element="div"/> 
+
+													<form:errors path="*" class="errors" id="status" element="div"/>
 													<table width="98%" border="0" cellpadding="4" cellspacing="0">
 														<tr>
 															<td class="black_ar">
@@ -321,7 +319,7 @@
 															<input type="hidden" name="_eventId" value="submit" />
 															</td>
 														</tr>
-														
+
 														<tr>
 															<td>&nbsp;</td>
 															<td align="left" valign="middle">
@@ -329,7 +327,7 @@
 																<tr>
 																	<td>
 																	<input name="Submit" type="submit"
-													class="blue_ar_b" value="<spring:message code="screen.welcome.button.login"/>" /> 
+													class="blue_ar_b" value="<spring:message code="screen.welcome.button.login"/>" />
 																	<a href="#" class="blue"><span class="wh_ar_b"></span></a></td>
 																	<td width="6px" align="center"><img src="images/uIEnhancementImages/or_dot.gif"
 																		alt="Divider line" width="1" height="15" hspace="5" /></td>
@@ -380,20 +378,20 @@
 								</tr>
 								<tr>
 									<td class="black_ar">
-										<img src="images/uIEnhancementImages/logo_ie.gif" 
-											alt="Internet Explorer 6.0" 
-											width="15" height="15" hspace="3" 
+										<img src="images/uIEnhancementImages/logo_ie.gif"
+											alt="Internet Explorer 6.0"
+											width="15" height="15" hspace="3"
 											vspace="3" align="absmiddle"/>
 										<spring:message code="app.certified.ie"/>
 										<br />
 										<img src="images/uIEnhancementImages/logo_firefox.gif"
-											alt="Mozilla Firefox-2.0.0.3" 
+											alt="Mozilla Firefox-2.0.0.3"
 											width="15" height="15" hspace="3"
 											vspace="3" align="absmiddle"/>
-										<spring:message code="app.certified.mozilla"/> 
+										<spring:message code="app.certified.mozilla"/>
 										<br />
 										<img src="images/uIEnhancementImages/logo_safari.gif"
-											alt="Mac Safari 2.0.3" 
+											alt="Mac Safari 2.0.3"
 											width="15" height="15" hspace="3"
 											vspace="3" align="absmiddle"/>
 										<spring:message code="app.certified.mac"/>
@@ -443,7 +441,7 @@
 							<br>
 							</td>
 						<tr height="1">
-							<td colspan="5" bgcolor="#bcbcbc">	
+							<td colspan="5" bgcolor="#bcbcbc">
 							</td>
 						</tr>
 					</table>
