@@ -91,8 +91,8 @@
 								style="background-repeat:repeat-x;">
 							<table width="100%" border="0" cellpadding="0" cellspacing="0">
 								<tr>
-									<td width="50%" valign="middle"><span class="wh_ar_b"><spring:message code="cas.welcome.message"/> </span></td>
-									<td width="50%" align="right" valign="top">
+									<td valign="middle"><span class="wh_ar_b"><spring:message code="cas.welcome.message"/> </span></td>
+									<td align="right" valign="top">
 										<a
 											href="/catissuecore/Home.do?operation=add" class="white"> <img
 											src="images/uIEnhancementImages/ic_report.gif" alt="Home" width="15"
@@ -283,7 +283,7 @@
 										</tr>
 										<tr>
 										<td colspan="3" align="left" class="showhide1">
-												<form:form method="post" id="fm1" commandName="${commandName}" htmlEscape="true" class="whitetable_bg">
+											<form:form method="post" id="fm1" commandName="${commandName}" htmlEscape="true" class="whitetable_bg">
 
 													<form:errors path="*" class="errors" id="status" element="div"/>
 													<table width="98%" border="0" cellpadding="4" cellspacing="0">
@@ -316,7 +316,7 @@
 														<tr>
 															<td class="black_ar" colspan="3">
 																<input type="hidden" name="lt" value="${flowExecutionKey}" />
-															<input type="hidden" name="_eventId" value="submit" />
+															<input type="hidden" name="_eventId" value="submit"/>
 															</td>
 														</tr>
 
@@ -326,13 +326,13 @@
 															<table border="0" cellspacing="0" cellpadding="0">
 																<tr>
 																	<td>
-																	<input name="Submit" type="submit"
+																	<input name="Submit" type="submit" tabindex="3"
 													class="blue_ar_b" value="<spring:message code="screen.welcome.button.login"/>" />
 																	<a href="#" class="blue"><span class="wh_ar_b"></span></a></td>
 																	<td width="6px" align="center"><img src="images/uIEnhancementImages/or_dot.gif"
 																		alt="Divider line" width="1" height="15" hspace="5" /></td>
 																	<td><a
-																		href="/catissuecore/SignUp.do?operation=add&pageOf=pageOfSignUp"
+																		href="/catissuecore/SignUp.do?operation=add&pageOf=pageOfSignUp" tabindex="4"
 																		class="view"><spring:message code="app.signup" /></a></td>
 																</tr>
 															</table>
@@ -451,5 +451,8 @@
 		</td>
 	</tr>
 </table>
+	<script>
+	document.forms[0].username.focus();
+	</script>
     </body>
 </html>
