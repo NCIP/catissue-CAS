@@ -1,6 +1,6 @@
 <?xml version ="1.0"?>
 
-<!--Ant script for create Build for CAS -->
+<!--Ant Script for create Build for CAS -->
 <project name="CAS" default="">
 
 	<taskdef resource="net/sf/antcontrib/antcontrib.properties">
