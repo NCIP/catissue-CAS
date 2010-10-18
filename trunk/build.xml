@@ -40,6 +40,7 @@
 	</target>	
 	
 	<target name="compile_cas_client_jar" depends="clean">
+	<tstamp />
 		<javac destdir="${compile.cas.dir}" includes="**/*.*" includeAntRuntime="false" debug="yes" target="1.5">
 			<src path="${src.cas.client}" />
 			<classpath>
