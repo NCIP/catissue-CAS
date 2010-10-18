@@ -32,6 +32,7 @@
 	</loadfile>
 
 	<target name="clean" description="cleans the previous complied java class files">
+			<tstamp />
 		<delete includeemptydirs="true">
 			<fileset dir="${compile.cas.dir}">
 				<include name="**/*" />
@@ -40,7 +41,6 @@
 	</target>	
 	
 	<target name="compile_cas_client_jar" depends="clean">
-	<tstamp />
 		<javac destdir="${compile.cas.dir}" includes="**/*.*" includeAntRuntime="false" debug="yes" target="1.5">
 			<src path="${src.cas.client}" />
 			<classpath>
@@ -62,10 +62,10 @@
 			</fileset>
 			<manifest>
    				<section name="${CAS.jar.details}">
-   			    <attribute name="Version" value="${CAS.jar.version}"/>
-   			   	<attribute name="Built-By" value="${CAS.jar.creator}" />   	   			   	   					
-				<attribute name="Build-on" value="${TODAY} ${TSTAMP}" />
-   				<attribute name="SVN-URL" value="${dist.revision}" />
+					<attribute name="Version" value="${CAS.jar.version}"/>
+					<attribute name="Built-By" value="${CAS.jar.creator}" />   	   			   	   					
+					<attribute name="Build-on" value="${TODAY} ${TSTAMP}" />
+					<attribute name="SVN-URL" value="${dist.revision}" />
    	   	    	</section>   	   					
 			</manifest>
 		</jar>
@@ -119,10 +119,18 @@
 				<include name="**/**" />
 			</fileset>
 		</copy>
-		<war destfile="cas.war" webxml="src_casserver/web.xml" duplicate="preserve" manifest="${base.dir}/MANIFEST.MF">
-			<fileset dir="${temp.cas.war.dir}">
-				<include name="**/**" />
-			</fileset>
+		<war destfile="cas.war" webxml="src_casserver/web.xml" duplicate="preserve">
+		<manifest>
+			<section name="${CAS.jar.details}">
+				<attribute name="Version" value="${CAS.jar.version}"/>
+				<attribute name="Built-By" value="${CAS.jar.creator}" />   	   			   	   					
+				<attribute name="Build-on" value="${TODAY} ${TSTAMP}" />
+				<attribute name="SVN-URL" value="${dist.revision}" />
+			</section>   	  
+	    </manifest>
+		<fileset dir="${temp.cas.war.dir}">
+			<include name="**/**" />
+		</fileset>
 		</war>
 		<delete dir="${temp.cas.war.dir}" />
 	</target>
