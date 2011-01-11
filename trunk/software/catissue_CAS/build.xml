@@ -58,14 +58,14 @@
 	</target>
 
 	<target name="build_cas_client_jar" depends="compile_cas_client_jar">
-		<delete file="${local-ivy-repo.dir}/casclient-${CAS.jar.version}.jar" />
-		<jar destfile="${local-ivy-repo.dir}/casclient-${CAS.jar.version}.jar">
+		<delete file="${local-ivy-repo.dir}/casclient-2.1.1.jar" />
+		<jar destfile="${local-ivy-repo.dir}/casclient-2.1.1.jar">
 			<fileset dir="${compile.cas.dir}" >
 				<include name="**/edu/**"/>
 			</fileset>
 			<manifest>
    				<section name="${CAS.jar.details}">
-					<attribute name="Version" value="${CAS.jar.version}"/>
+					<attribute name="Version" value="${CAS.client.version}"/>
 					<attribute name="Built-By" value="${CAS.jar.creator}" />
 					<attribute name="Build-on" value="${TODAY} ${TSTAMP}" />
 					<attribute name="SVN-URL" value="${dist.revision}" />
