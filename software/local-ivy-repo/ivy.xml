@@ -3,7 +3,7 @@
 	<info organisation="gov.nih.nci.catissue" module="caTissue_CAS" revision="1.0"
 		status="release" />
 	<publications>
-		<artifact name="casclient-1.0" type="jar" />
+		<artifact name="casclient" type="jar" />
 		<artifact name="cas" type="war" />
 	</publications>
 </ivy-module>
