@@ -1,0 +1,194 @@
+<?xml version ="1.0"?>
+
+<!--Ant Script for create Build for CAS -->
+<project name="CAS" default="" xmlns:ivy="antlib:org.apache.ivy.ant">
+
+	<taskdef resource="net/sf/antcontrib/antcontrib.properties">
+		<classpath>
+		    <pathelement location="./server_extra_lib/ant-contrib.jar"/>
+		</classpath>
+	</taskdef>
+
+
+	<property name="base.dir" value="." />
+	<property name="software.dir" value=".." />
+	<property file="${software.dir}/caTissue_CAS/src/conf/CAS.properties"/>
+	<property name="target.dir" value="${software.dir}/target" />
+	<property name="temp.dir" value="${target.dir}/temp"/>
+	<property name="local-ivy-repo.dir" value="${software.dir}/local-ivy-repo"/>
+	<property name="compile.cas.dir" value="${temp.dir}/classes"/>
+	<property name="src.cas.client" value="${base.dir}/src/java/src_casclient" />
+	<property name="src.cas.server" value="${base.dir}/src/java/src_casserver" />
+	<property name="web.dir" value="${base.dir}/src/web" />
+	<property name="cas.client.lib.dir" value="${base.dir}/src/lib/CAS_Client/lib" />
+	<property name="cas.server.lib.dir" value="${base.dir}/src/lib/CAS_Server/lib" />
+	<property name="cas.extra.lib.dir" value="${base.dir}/src/lib/CAS_Server/server_extra_lib" />
+	<property name="temp.cas.war.dir" value="${temp.dir}/temp_cas" />
+
+	<loadfile property="dist.revision" srcFile="./.svn/entries">
+		<filterchain>
+			<headfilter lines="1" skip="4"/>
+		</filterchain>
+	</loadfile>
+
+	<target name="clean" description="cleans the previous complied java class files">
+			<tstamp />
+		<delete includeemptydirs="true">
+			<fileset dir="${temp.dir}">
+				<include name="**/*" />
+			</fileset>
+
+		</delete>
+	</target>
+
+	<target name="compile_cas_client_jar" depends="clean,retrieve-ivy-files">
+		<delete dir="${compile.cas.dir}" />
+		<mkdir dir="${compile.cas.dir}"/>
+		<javac destdir="${compile.cas.dir}" includes="**/*.*" includeAntRuntime="false" debug="yes" target="1.5">
+			<src path="${src.cas.client}" />
+			<classpath>
+				<fileset dir="${cas.client.lib.dir}">
+					<include name="*.jar" />
+				</fileset>
+				<fileset dir="${cas.extra.lib.dir}">
+					<include name="*.jar" />
+				</fileset>
+			</classpath>
+		</javac>
+	</target>
+
+	<target name="build_cas_client_jar" depends="compile_cas_client_jar">
+		<delete file="${local-ivy-repo.dir}/casclient-${CAS.jar.version}.jar" />
+		<jar destfile="${local-ivy-repo.dir}/casclient-${CAS.jar.version}.jar">
+			<fileset dir="${compile.cas.dir}" >
+				<include name="**/edu/**"/>
+			</fileset>
+			<manifest>
+   				<section name="${CAS.jar.details}">
+					<attribute name="Version" value="${CAS.jar.version}"/>
+					<attribute name="Built-By" value="${CAS.jar.creator}" />
+					<attribute name="Build-on" value="${TODAY} ${TSTAMP}" />
+					<attribute name="SVN-URL" value="${dist.revision}" />
+   	   	    	</section>
+			</manifest>
+		</jar>
+	</target>
+
+	<target name="compile_cas_server_war" depends="clean,retrieve-ivy-files">
+		<delete dir="${compile.cas.dir}" />
+		<mkdir dir="${compile.cas.dir}"/>
+		<javac destdir="${compile.cas.dir}" includes="**/*.*" includeAntRuntime="false" debug="yes" target="1.5">
+			<src path="${src.cas.server}" />
+			<classpath>
+				<fileset dir="${cas.server.lib.dir}">
+					<include name="*.jar" />
+				</fileset>
+				<fileset dir="${cas.extra.lib.dir}">
+					<include name="*.jar" />
+				</fileset>
+			</classpath>
+		</javac>
+	</target>
+
+	<target name="build_war" depends="compile_cas_server_war">
+		<delete dir="${temp.cas.war.dir}" />
+		<mkdir dir="${temp.cas.war.dir}" />
+		<unwar src="${local-ivy-repo.dir}/cas.war" dest="${temp.cas.war.dir}"/>
+
+		<copy todir="${temp.cas.war.dir}" overwrite="true">
+			<fileset dir="${web.dir}"  >
+				<include name="css/**" />
+				<include name="images/**" />
+				<exclude name="images/iphone/**" />
+				<include name="js/**" />
+
+			</fileset>
+		</copy>
+
+		<mkdir dir="${temp.cas.war.dir}/css/images" />
+		<copy todir="${temp.cas.war.dir}/css/images" overwrite="true">
+				<fileset dir="${web.dir}/images"  >
+					<include name="iphone/**" />
+				</fileset>
+		</copy>
+
+		<copy todir="${temp.cas.war.dir}/WEB-INF/view/jsp" overwrite="true">
+			<fileset dir="${web.dir}/jsp"  />
+		</copy>
+		<copy todir="${temp.cas.war.dir}/WEB-INF" overwrite="true">
+			<fileset dir="${base.dir}/src/conf"  >
+				<include name="web.xml" />
+				<include name="deployerConfigContext.xml" />
+			</fileset>
+		</copy>
+
+		<copy todir="${temp.cas.war.dir}/WEB-INF/lib" overwrite="true">
+			<fileset dir="${cas.extra.lib.dir}"  >
+				<include name="*.jar" />
+			</fileset>
+		</copy>
+		<copy todir="${temp.cas.war.dir}/WEB-INF/classes" overwrite="true">
+			<fileset dir="${compile.cas.dir}"  >
+				<include name="**/**" />
+			</fileset>
+		</copy>
+		<war destfile="${local-ivy-repo.dir}/cas.war" webxml="src/conf/web.xml" duplicate="preserve">
+		<manifest>
+			<section name="${CAS.jar.details}">
+				<attribute name="Version" value="${CAS.jar.version}"/>
+				<attribute name="Built-By" value="${CAS.jar.creator}" />
+				<attribute name="Build-on" value="${TODAY} ${TSTAMP}" />
+				<attribute name="SVN-URL" value="${dist.revision}" />
+			</section>
+	    </manifest>
+		<fileset dir="${temp.cas.war.dir}">
+			<include name="**/**" />
+		</fileset>
+		</war>
+
+	</target>
+	<target name="dist" depends="build_cas_client_jar,build_war"/>
+	<!--ivy:retrieve related tags start here-->
+		<property name="common.dir" location="${software.dir}/common" />
+
+
+
+		<property name="bda-utils.dir" location="${target.dir}/bda-utils" />
+			<property name="project.properties.file" value="${software.dir}/build/project.properties" />
+			<property file="${project.properties.file}" />
+			<import file="${bda-utils.dir}/bda-build-utils-${bda.version}.xml" />
+
+
+			<path id="bda-utils.classpath">
+				<fileset dir="${bda-utils.dir}">
+					<include name="**/*.jar" />
+				</fileset>
+			</path>
+			<path id="ivy.classpath">
+				<fileset dir="${target.dir}/lib">
+					<include name="ivy-2.0.0.jar" />
+				</fileset>
+			</path>
+
+			<taskdef resource="org/apache/ivy/ant/antlib.xml" uri="antlib:org.apache.ivy.ant" classpathref="ivy.classpath" />
+			<taskdef name="xmltask" classname="com.oopsconsultancy.xmltask.ant.XmlTask"  classpathref="bda-utils.classpath"/>
+			<taskdef resource="net/sf/antcontrib/antcontrib.properties" classpathref="bda-utils.classpath"/>
+
+		<property name="ivy.settings.file" location="${common.dir}/ivy/cbiit-ivy-settings.xml" />
+				<target name="ivy-settings">
+					<property name="ivy.dep.file" value="${common.dir}/bda-download/ivy-bda.xml"/>
+					<ivy:settings file="${ivy.settings.file}"/>
+				</target>
+			<target name="retrieve-ivy-files" depends="ivy-settings"  description="Updates the local ivy repository">
+				<ivy:resolve refresh="true" conf="app_lib"/>
+				<ivy:retrieve pattern="${cas.extra.lib.dir}/[artifact]-[revision].[ext]" conf="app_lib" />
+			<antcall target="retrieve-idp"></antcall>
+			</target>
+			<target name="retrieve-idp" depends="ivy-settings"  description="Updates the local ivy repository">
+					<ivy:resolve refresh="true" conf="idp_lib"/>
+					<ivy:retrieve pattern="${cas.extra.lib.dir}/[artifact][revision].[ext]" conf="idp_lib" />
+				</target>
+
+		<!--ivy:retrieve related tags end here-->
+
+</project>
