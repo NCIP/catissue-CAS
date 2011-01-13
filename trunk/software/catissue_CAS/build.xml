@@ -12,7 +12,7 @@
 
 	<property name="base.dir" value="." />
 	<property name="software.dir" value=".." />
-	<property file="${software.dir}/caTissue_CAS/src/conf/CAS.properties"/>
+	<property file="${software.dir}/catissue_CAS/src/conf/CAS.properties"/>
 	<property name="target.dir" value="${software.dir}/target" />
 	<property name="temp.dir" value="${target.dir}/temp"/>
 	<property name="local-ivy-repo.dir" value="${software.dir}/local-ivy-repo"/>
