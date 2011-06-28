@@ -210,7 +210,7 @@
 
 	<session-config>
 		<!-- Default to 5 minute session timeouts -->
-		<session-timeout>5</session-timeout>
+		<session-timeout>5000</session-timeout>
 	</session-config>
 
 	<error-page>
