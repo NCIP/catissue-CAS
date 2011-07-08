@@ -30,6 +30,13 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!--<spring:theme code="mobile.custom.css.file" var="mobileCss" text="" />-->
+<script>
+onerror = handleError;
+function handleError(msg, url, line) 
+{
+      return true;
+}
+</script>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 	<head>
 	    <title>caTissue Suite v2.0</title>
