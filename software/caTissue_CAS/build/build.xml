@@ -114,7 +114,7 @@
 			<fileset dir="${basedir}/server/src/main/web/jsp"  />
 		</copy>
 		<copy todir="${temp.cas.war.dir}/WEB-INF" overwrite="true">
-			<fileset dir="${basedir}/src/conf"  >
+			<fileset dir="${basedir}/conf"  >
 				<include name="web.xml" />
 				<include name="deployerConfigContext.xml" />
 			</fileset>
