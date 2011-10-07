@@ -1,23 +1,23 @@
-<?xml version ="1.0"?>
+<?xml version="1.0" encoding="utf-8" ?>
 
-<!--Ant Script for create Build for CAS -->
-<project name="CAS" default="" xmlns:ivy="antlib:org.apache.ivy.ant">
+<project name="CAS" xmlns:ivy="antlib:org.apache.ivy.ant" basedir="../">
 
 	<taskdef resource="net/sf/antcontrib/antcontrib.properties">
 		<classpath>
-		    <pathelement location="./server_extra_lib/ant-contrib.jar"/>
+		    <pathelement location="../server/lib/ant-contrib.jar"/>
 		</classpath>
 	</taskdef>
 
-
-	<property name="base.dir" value="." />
-	<property name="software.dir" value=".." />
+    <property name="base.dir" value="../" />
+	<property name="software.dir" value="../../" />
 	<property file="${software.dir}/caTissue_CAS/src/conf/CAS.properties"/>
+
 	<property name="target.dir" value="${software.dir}/target" />
 	<property name="temp.dir" value="${target.dir}/temp"/>
 	<property name="local-ivy-repo.dir" value="${software.dir}/local-ivy-repo"/>
-	<property name="compile.cas.dir" value="${temp.dir}/classes"/>
-	<property name="src.cas.client" value="${base.dir}/src/java/src_casclient" />
+
+    <property name="compile.cas.dir" value="${temp.dir}/classes"/>
+	<property name="src.cas.client" value="../client/java/src_casclient" />
 	<property name="src.cas.server" value="${base.dir}/src/java/src_casserver" />
 	<property name="web.dir" value="${base.dir}/src/web" />
 	<property name="cas.client.lib.dir" value="${base.dir}/src/lib/CAS_Client/lib" />
@@ -132,7 +132,7 @@
 				<include name="**/**" />
 			</fileset>
 		</copy>
-		<war destfile="${local-ivy-repo.dir}/cas.war" webxml="src/conf/web.xml" duplicate="preserve">
+		<war destfile="${local-ivy-repo.dir}/cas.war" webxml="../src/conf/web.xml" duplicate="preserve">
 		<manifest>
 			<section name="${CAS.jar.details}">
 				<attribute name="Version" value="${CAS.jar.version}"/>
