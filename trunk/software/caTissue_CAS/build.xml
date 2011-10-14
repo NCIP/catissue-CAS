@@ -4,11 +4,13 @@
 
     <import file="ivy-targets.xml" />
 
-    <taskdef resource="net/sf/antcontrib/antcontrib.properties">
-		<classpath>
-		    <pathelement location="${basedir}/lib/ant-contrib-1.0.jar"/>
-		</classpath>
-	</taskdef>
+    <target name="postResolve" depends="resolve">
+        <taskdef resource="net/sf/antcontrib/antcontrib.properties">
+            <classpath>
+                <fileset dir="${basedir}/lib"><include name="ant-contrib*.jar" /></fileset>
+            </classpath>
+        </taskdef>
+    </target>
 
 	<property name="software.dir" value="${basedir}/../" />
 	<property file="${basedir}/conf/CAS.properties"/>
@@ -33,15 +35,11 @@
 	</loadfile>
 
     <target name="clean" description="cleans the previous complied java class files">
-        <tstamp/>
-        <delete includeemptydirs="true">
-            <fileset dir="${temp.dir}">
-                <include name="**/*"/>
-            </fileset>
-        </delete>
+        <delete dir="${temp.dir}" />
+        <delete dir="${lib.dir}" />
     </target>
 
-    <target name="compile_cas_client_jar" depends="clean, resolve">
+    <target name="compile_cas_client_jar" depends="clean, postResolve">
 		<delete dir="${compile.cas.dir}" />
 		<mkdir dir="${compile.cas.dir}"/>
 		<javac destdir="${compile.cas.dir}" includes="**/*.*" includeAntRuntime="false" debug="yes" target="1.5">
@@ -75,7 +73,7 @@
         <copy file="${dist.dir}/casclient.jar" todir="${local-ivy-repo.dir}"/>
 	</target>
 
-	<target name="compile_cas_server_war" depends="clean, resolve">
+	<target name="compile_cas_server_war" depends="postResolve">
 		<delete dir="${compile.cas.dir}" />
 		<mkdir dir="${compile.cas.dir}"/>
 		<javac destdir="${compile.cas.dir}" includes="**/*.*" includeAntRuntime="false" debug="yes" target="1.5">
