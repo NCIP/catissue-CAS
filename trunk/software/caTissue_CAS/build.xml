@@ -6,7 +6,7 @@
 
     <taskdef resource="net/sf/antcontrib/antcontrib.properties">
 		<classpath>
-		    <pathelement location="${basedir}/server/lib/ant-contrib.jar"/>
+		    <pathelement location="${basedir}/lib/ant-contrib-1.0.jar"/>
 		</classpath>
 	</taskdef>
 
@@ -15,7 +15,8 @@
 
 	<property name="target.dir" value="${software.dir}/target" />
 	<property name="temp.dir" value="${target.dir}/temp"/>
-	<property name="dist.dir" value="${base.dir}/dist"/>
+	<property name="dist.dir" value="${basedir}/dist"/>
+	<property name="lib.dir" value="${basedir}/lib"/>
 	<property name="local-ivy-repo.dir" value="${software.dir}/local-ivy-repo"/>
 
     <property name="compile.cas.dir" value="${temp.dir}/classes"/>
@@ -24,8 +25,6 @@
 	<property name="web.dir" value="${basedir}/server/src/main/web" />
 
     <property name="cas.client.lib.dir" value="${basedir}/client/lib" />
-	<property name="cas.server.lib.dir" value="${basedir}/server/lib" />
-	<property name="cas.extra.lib.dir" value="${basedir}/server/lib/extra" />
 	<property name="temp.cas.war.dir" value="${temp.dir}/temp_cas" />
 
 	<loadfile property="dist.revision" srcFile="./.svn/entries">
@@ -52,7 +51,7 @@
 				<fileset dir="${cas.client.lib.dir}">
 					<include name="*.jar" />
 				</fileset>
-				<fileset dir="${cas.extra.lib.dir}">
+				<fileset dir="${lib.dir}">
 					<include name="*.jar" />
 				</fileset>
 			</classpath>
@@ -83,10 +82,10 @@
 		<javac destdir="${compile.cas.dir}" includes="**/*.*" includeAntRuntime="false" debug="yes" target="1.5">
 			<src path="${src.cas.server}" />
 			<classpath>
-				<fileset dir="${cas.server.lib.dir}">
+				<fileset dir="${lib.dir}">
 					<include name="*.jar" />
 				</fileset>
-				<fileset dir="${cas.extra.lib.dir}">
+				<fileset dir="${lib.dir}">
 					<include name="*.jar" />
 				</fileset>
 			</classpath>
@@ -125,7 +124,7 @@
 		</copy>
 
 		<copy todir="${temp.cas.war.dir}/WEB-INF/lib" overwrite="true">
-			<fileset dir="${cas.extra.lib.dir}"  >
+			<fileset dir="${lib.dir}"  >
 				<include name="*.jar" />
 			</fileset>
 		</copy>
