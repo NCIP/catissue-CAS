@@ -6,7 +6,6 @@
 		<dependency org="local" name="local" rev="1.0"/>
 
 <!-- PUBLIC REPO -->
-        <dependency org="log4j" name="log4j" rev="1.2.14"/>
 <!--
         <dependency org="junit" name="junit" rev="4.5" />
         <dependency org="dozer" name="dozer-osgi" rev="5.2.1"/>
