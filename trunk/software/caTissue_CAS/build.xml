@@ -24,7 +24,6 @@
 	<property name="src.cas.server" value="${basedir}/server/src/main/java" />
 	<property name="web.dir" value="${basedir}/server/src/main/web" />
 
-    <property name="cas.client.lib.dir" value="${basedir}/client/lib" />
 	<property name="temp.cas.war.dir" value="${temp.dir}/temp_cas" />
 
 	<loadfile property="dist.revision" srcFile="./.svn/entries">
@@ -48,7 +47,7 @@
 		<javac destdir="${compile.cas.dir}" includes="**/*.*" includeAntRuntime="false" debug="yes" target="1.5">
 			<src path="${src.cas.client}" />
 			<classpath>
-				<fileset dir="${cas.client.lib.dir}">
+				<fileset dir="${lib.dir}">
 					<include name="*.jar" />
 				</fileset>
 				<fileset dir="${lib.dir}">
@@ -82,9 +81,6 @@
 		<javac destdir="${compile.cas.dir}" includes="**/*.*" includeAntRuntime="false" debug="yes" target="1.5">
 			<src path="${src.cas.server}" />
 			<classpath>
-				<fileset dir="${lib.dir}">
-					<include name="*.jar" />
-				</fileset>
 				<fileset dir="${lib.dir}">
 					<include name="*.jar" />
 				</fileset>
