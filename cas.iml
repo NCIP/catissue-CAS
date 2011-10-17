@@ -19,7 +19,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/extra/securityManager-1.1.7.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/dom4j-1.6.1-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -28,7 +28,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/extra/washu-commons-1.1.7.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/inspektr-common-1.0.0.GA-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -37,7 +37,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/extra/DAO-1.1.9.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/spring-webflow-2.0.8.RELEASE-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -46,7 +46,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/extra/IDPAuthenticationManager0_0.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/spring-tx-3.0.1.RELEASE-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -55,7 +55,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/extra/commonpackage-1.1.8.3.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/junit-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -64,7 +64,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/jaxb-impl-2.1.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/commons-lang-2.4-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -73,7 +73,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/jcl-over-slf4j-1.5.8.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/inspektr-error-1.0.0.GA-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -82,7 +82,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/javassist-3.7.ga.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/customEncoder-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -91,7 +91,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/jaxb-api-2.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/spring-security-web-3.0.1.RELEASE-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -100,7 +100,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/inspektr-support-spring-1.0.0.GA.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/jcl-over-slf4j-1.5.8-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -109,7 +109,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/j2ee.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/spring-binding-2.0.8.RELEASE-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -118,7 +118,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/inspektr-common-1.0.0.GA.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/cas-client-core-3.1.10-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -127,7 +127,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/inspektr-error-1.0.0.GA.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/servlet-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -136,7 +136,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/opensaml-1.1b.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/opensaml-1.1b-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -145,7 +145,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/perf4j-0.9.12-log4jonly.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/jstl-1.1.2-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -154,7 +154,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/mysql-connector-java-5.0.8.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/spring-security-cas-client-3.0.1.RELEASE-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -163,7 +163,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/ognl-2.7.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/perf4j-0.9.12-log4jonly-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -172,7 +172,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/lbRuntime.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/antlr-2.7.6-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -181,7 +181,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/log4j-1.2.15.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/hibernate-commons-annotations-3.2.0.Beta1-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -190,7 +190,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/jdom-1.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/spring-jdbc-3.0.1.RELEASE-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -199,7 +199,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/jstl-1.1.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/jaxb-impl-2.1.3-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -208,7 +208,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/customEncoder.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/commons-httpclient-3.0.1-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -217,7 +217,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/antlr-2.7.6.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/commons-dbcp-1.2.1-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -226,7 +226,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/csmapi.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/spring-security-core-3.0.1.RELEASE-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -235,7 +235,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/ant-contrib.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/spring-context-3.0.1.RELEASE-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -244,7 +244,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/commons-logging-1.0.4.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/spring-security-config-3.0.1.RELEASE-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -253,7 +253,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/activation-1.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/slf4j-api-1.5.8-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -262,7 +262,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/commons-lang-2.4.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/person-directory-impl-1.5.0-RC6-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -271,7 +271,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/commons-jexl-1.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/xmldsig-1.0-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -280,7 +280,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/commons-httpclient-3.0.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/inspektr-audit-1.0.0.GA-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -289,7 +289,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/commons-dbcp-1.2.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/javassist-3.7.ga-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -298,7 +298,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/commons-collections-3.2.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/hibernate-core-3.5.0-CR-2-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -307,7 +307,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/inspektr-audit-1.0.0.GA.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/activation-1.1-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -316,7 +316,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/commons-codec-1.4.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/ognl-2.7.3-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -325,7 +325,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/hibernate-validator-4.0.2.GA.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/xmlsec-1.4.3-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -334,7 +334,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/clm.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/aspectjrt-1.6.7-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -343,7 +343,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/hibernate-core-3.5.0-CR-2.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/spring-web-3.0.1.RELEASE-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -352,7 +352,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/cas-server-support-jdbc-3.4.2.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/j2ee-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -361,7 +361,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/hibernate-commons-annotations-3.2.0.Beta1.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/cas-server-support-jdbc-3.4.2.1-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -370,7 +370,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/cas-server-core-3.4.2.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/spring-js-2.0.8.RELEASE-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -379,7 +379,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/hibernate-annotations-3.5.0-CR-2.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/ehcache-1.2.3-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -388,7 +388,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/cas-client-core-3.1.10.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/lbRuntime-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -397,7 +397,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/ejb3-persistence.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/hibernate-validator-4.0.2.GA-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -406,7 +406,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/aspectjweaver-1.6.7.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/commons-collections-3.2.1-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -415,7 +415,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/ehcache-1.2.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/spring-aop-3.0.1.RELEASE-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -424,7 +424,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/aspectjrt-1.6.7.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/slf4j-log4j12-1.5.8-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -433,7 +433,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/dom4j-1.6.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/csmapi-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -442,7 +442,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/aopalliance-1.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/spring-core-3.0.1.RELEASE-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -451,7 +451,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/spring-tx-3.0.1.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/validation-api-1.0.0.GA-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -460,7 +460,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/spring-web-3.0.1.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/stax-api-1.0-2-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -469,7 +469,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/spring-webflow-2.0.8.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/spring-asm-3.0.1.RELEASE-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -478,7 +478,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/spring-webmvc-3.0.1.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/jdom-1.0-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -487,7 +487,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/spring-security-cas-client-3.0.1.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/mysql-connector-java-5.0.8-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -496,7 +496,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/spring-security-config-3.0.1.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/quartz-1.6.1-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -505,7 +505,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/spring-security-core-3.0.1.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/spring-webmvc-3.0.1.RELEASE-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -514,7 +514,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/spring-security-web-3.0.1.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/securityManager-1.1.7.2.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -523,7 +523,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/xmldsig-1.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/washu-commons-1.1.7.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -532,7 +532,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/xmlsec-1.4.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/commons-logging-api-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -541,7 +541,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/standard-1.1.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/aspectjweaver-1.6.7-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -550,7 +550,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/stax-api-1.0-2.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/spring-context-support-3.0.1.RELEASE-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -559,7 +559,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/validation-api-1.0.0.GA.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/inspektr-support-spring-1.0.0.GA-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -568,7 +568,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/xml-apis-1.0.b2.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/DAO-1.1.9.5.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -577,7 +577,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/spring-aop-3.0.1.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/aopalliance-1.0-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -586,7 +586,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/slf4j-log4j12-1.5.8.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/commons-logging-1.0.4-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -595,7 +595,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/spring-beans-3.0.1.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/commonpackage-1.1.8.3.3.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -604,7 +604,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/spring-asm-3.0.1.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/standard-1.1.2-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -613,7 +613,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/person-directory-impl-1.5.0-RC6.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/IDPAuthenticationManager-0_0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -622,7 +622,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/person-directory-api-1.5.0-RC6.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/log4j-1.2.15-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -631,7 +631,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/slf4j-api-1.5.8.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/person-directory-api-1.5.0-RC6-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -640,7 +640,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/quartz-1.6.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/commons-codec-1.4-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -649,7 +649,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/client/lib/junit.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/mockrunner-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -658,7 +658,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/spring-jdbc-3.0.1.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/spring-expression-3.0.1.RELEASE-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -667,7 +667,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/client/lib/mockrunner.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/clm-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -676,7 +676,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/spring-expression-3.0.1.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/ant-contrib-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -685,7 +685,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/spring-orm-3.0.1.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/jaxb-api-2.1-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -694,7 +694,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/client/lib/commons-logging-api.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/ejb3-persistence-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -703,7 +703,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/spring-js-2.0.8.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/xml-apis-1.0.b2-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -712,7 +712,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/spring-context-3.0.1.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/commons-jexl-1.1-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -721,7 +721,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/spring-binding-2.0.8.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/hibernate-annotations-3.5.0-CR-2-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -730,7 +730,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/client/lib/servlet.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/cas-server-core-3.4.2.1-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -739,7 +739,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/spring-core-3.0.1.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/spring-beans-3.0.1.RELEASE-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -748,7 +748,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/server/lib/spring-context-support-3.0.1.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/software/caTissue_CAS/lib/spring-orm-3.0.1.RELEASE-1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
