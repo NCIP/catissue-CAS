@@ -1,13 +1,15 @@
 <ivysettings>
 	<settings defaultResolver="default-resolver" validate="false" />
+	<caches default="caTissueCache">
+        <cache name="caTissueCache" basedir="${user.home}/.ivy2/caTissue"/>
+    </caches>
 
 	<resolvers>
 		<chain name="default-resolver" returnFirst="true">
 
-
             <filesystem name="localResolver" local="true" >
-                  <ivy pattern="${user.home}/.ivy2/cache/[organisation]/[module]/ivy-[revision].xml"/>
-                  <artifact pattern="${user.home}/.ivy2/cache/[organisation]/[module]/[type]s/[artifact]-[revision].[ext]"/>
+                  <ivy pattern="${user.home}/.ivy2/caTissue/[organisation]/[module]/ivy-[revision].xml"/>
+                  <artifact pattern="${user.home}/.ivy2/caTissue/[organisation]/[module]/[type]s/[artifact]-[revision].[ext]"/>
             </filesystem>
 
             <url name="cbiit-ivy-repo">
@@ -22,6 +24,10 @@
              	<ivy pattern="${ivy.local.jars}/ivy.xml"/>
              	<artifact pattern="${ivy.local.jars}/[artifact].[ext]"/>
         	</filesystem>
+        	
+        	<url name="NEXUS_SNAPSHOTS" m2compatible="false">
+				<artifact pattern="https://ncimvn.nci.nih.gov/nexus/content/repositories/snapshots/[organisation]/[module]/[artifact]/[revision]/[artifact]-[revision].[ext]" />
+			</url>
 
         </chain>
 

@@ -1,5 +1,5 @@
 <ivy-module version="2.0">
-    <info organisation="gov.nih.nci.catissue" module="ivyTest"/>
+    <info organisation="gov.nih.nci.catissue" module="caTissue_CAS" revision="2.1.1"/>
     <dependencies>
 
 <!--
@@ -7,7 +7,7 @@
     https://bugzilla.wustl.edu/bugzilla/show_bug.cgi?id=21223
 -->
 <!-- LOCAL SVN REPO -->
-		<dependency org="local" name="caTussue_CAS" rev="1.0"/>
+		<dependency org="local" name="caTissue_CAS" rev="1.0"/>
 
 <!-- PUBLIC REPO -->
         <dependency org="gov.nih.nci.commonpackage" name="commonpackage" rev="1.1.8.3.3"/>
