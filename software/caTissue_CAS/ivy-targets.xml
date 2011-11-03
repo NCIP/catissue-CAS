@@ -40,6 +40,8 @@
             <fileset dir="${ivy.jar.dir}" includes="*.jar"/>
         </path>
         <taskdef resource="org/apache/ivy/ant/antlib.xml" uri="antlib:org.apache.ivy.ant" classpathref="ivy.lib.path"/>
+    	<ivy:settings file="${basedir}/ivysettings.xml" id="catissue.ivy.instance"/>  
+    	<property name="loaded.ivy.settings" value="true" />
     </target>
 
     <target name="publish" depends="init-ivy">
@@ -52,5 +54,21 @@
                      revision="${revision}"
                      artifactspattern="${dist.dir}/[artifact].[ext]"/>
     </target>
+	
+	<target name="publishNexus" depends="init-ivy">
+		<fail unless="user" message="supply 'user' on the command line" />
+		<fail unless="password" message="supply 'password' on the command line" />
+
+		<ivy:publish resolver="NEXUS_SNAPSHOTS"
+	                    pubrevision="${pub.revision}"
+	                    overwrite="true"
+	                    organisation="${organization}"
+	                    module="${module}"
+	                    publishivy="false"
+	                    revision="${revision}"
+	                    artifactspattern="${dist.dir}/[artifact].[ext]"
+						srcivypattern="${dist.dir}/ivy.xml"
+						forcedeliver="false"/>
+	</target>
 
 </project>
