@@ -8,8 +8,8 @@
 		<chain name="default-resolver" returnFirst="true">
 
             <filesystem name="localResolver" local="true" >
-                  <ivy pattern="${user.home}/.ivy2/caTissue/[organisation]/[module]/ivy-[revision].xml"/>
-                  <artifact pattern="${user.home}/.ivy2/caTissue/[organisation]/[module]/[type]s/[artifact]-[revision].[ext]"/>
+                  <ivy pattern="${user.home}/.ivy2/cache/[organisation]/[module]/ivy-[revision].xml"/>
+                  <artifact pattern="${user.home}/.ivy2/cache/[organisation]/[module]/[type]s/[artifact]-[revision].[ext]"/>
             </filesystem>
 
             <url name="cbiit-ivy-repo">
