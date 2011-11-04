@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0">
-	<info organisation="gov.nih.nci.catissue" module="cas" revision="2.1.1" />
+	<info organisation="gov.nih.nci.catissue" module="cas" revision="${CAS.project.version}" />
 	<publications>
 		<artifact name="cas" ext="war" type="war" />
 		<artifact name="casclient" ext="jar" type="jar" />

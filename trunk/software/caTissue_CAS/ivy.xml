@@ -1,5 +1,7 @@
-<ivy-module version="2.0">
-    <info organisation="gov.nih.nci.catissue" module="caTissue_CAS" revision="2.1.1"/>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+    
+    <info organisation="gov.nih.nci.catissue" module="cas" revision="${CAS.project.version}"/>
+    
     <dependencies>
 
 <!--
@@ -14,7 +16,7 @@
         <dependency org="gov.nih.nci.dao" name="dao" rev="1.1.9.5"/>
         <dependency org="gov.nih.nci.securitymanager" name="securitymanager" rev="1.1.7.2"/>
         <dependency org="gov.nih.nci.washu-commons" name="washu-commons" rev="1.1.7"/>
-        <dependency org="gov.nih.nci.idp" name="IDPAuthenticationManager" rev="0_0" />
+        <dependency org="gov.nih.nci.idp" name="IDPAuthenticationManager" rev="0_0"/>
 
 <!--
         <dependency org="junit" name="junit" rev="4.5" />
