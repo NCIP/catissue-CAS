@@ -2,7 +2,6 @@
 <project xmlns:ivy="antlib:org.apache.ivy.ant">
 
     <property name="ivy.install.version" value="2.0.0-beta1"/>
-    <property name="ivy.install.version" value="2.0.0-beta1"/>
     <property name="ivy.jar.dir" value="${user.home}/.ivy"/>
     <property name="ivy.jar.file" value="${ivy.jar.dir}/ivy.jar"/>
     <property name="ivy.local.jars" value="${basedir}/ivy.local.jars"/>
@@ -11,9 +10,9 @@
     <property name="organization" value="gov.nih.nci.catissue"/>
 
     <!-- CHANGE THE NEXT PROPERTIES TO MATCH YOUR PROJECT -->
-    <property name="pub.revision" value="2.1.1"/>
-    <property name="revision" value="2.1.1"/>
-    <property name="module" value="caTissue_CAS"/>
+    <property name="pub.revision" value="${CAS.project.version}"/>
+    <property name="revision" value="${CAS.project.version}"/>
+    <property name="module" value="cas"/>
 
 
     <!-- IVY -->
@@ -54,10 +53,9 @@
                      revision="${revision}"
                      artifactspattern="${dist.dir}/[artifact].[ext]"/>
     </target>
+
 	
 	<target name="publishNexus" depends="init-ivy">
-		<fail unless="user" message="supply 'user' on the command line" />
-		<fail unless="password" message="supply 'password' on the command line" />
 
 		<ivy:publish resolver="NEXUS_SNAPSHOTS"
 	                    pubrevision="${pub.revision}"
@@ -68,7 +66,7 @@
 	                    revision="${revision}"
 	                    artifactspattern="${dist.dir}/[artifact].[ext]"
 						srcivypattern="${dist.dir}/ivy.xml"
-						forcedeliver="false"/>
+						forcedeliver="true"/>
 	</target>
 
 </project>
