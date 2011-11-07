@@ -1,7 +1,8 @@
 
 <project xmlns:ivy="antlib:org.apache.ivy.ant">
 
-    <property name="ivy.install.version" value="2.0.0-beta1"/>
+	<property file="${basedir}/conf/CAS.properties"/>
+    <property name="ivy.install.version" value="2.0.0"/>
     <property name="ivy.jar.dir" value="${user.home}/.ivy"/>
     <property name="ivy.jar.file" value="${ivy.jar.dir}/ivy.jar"/>
     <property name="ivy.local.jars" value="${basedir}/ivy.local.jars"/>
@@ -44,6 +45,14 @@
     </target>
 
     <target name="publish" depends="init-ivy">
+
+    	<delete file="${dist.dir}/ivy.xml" quiet="true" />
+    	<delete file="${dist.dir}/cas.pom" quiet="true" />
+		
+    	<ivy:makepom 
+    	    ivyfile="${basedir}/ivy.xml" 
+    	    pomfile="${dist.dir}/cas.pom"/>
+    	
         <ivy:publish resolver="localResolver"
                      pubrevision="${pub.revision}"
                      overwrite="true"
@@ -54,19 +63,24 @@
                      artifactspattern="${dist.dir}/[artifact].[ext]"/>
     </target>
 
-	
-	<target name="publishNexus" depends="init-ivy">
-
-		<ivy:publish resolver="NEXUS_SNAPSHOTS"
-	                    pubrevision="${pub.revision}"
-	                    overwrite="true"
-	                    organisation="${organization}"
-	                    module="${module}"
-	                    publishivy="false"
-	                    revision="${revision}"
-	                    artifactspattern="${dist.dir}/[artifact].[ext]"
-						srcivypattern="${dist.dir}/ivy.xml"
-						forcedeliver="true"/>
-	</target>
+    <target name="publish-nexus" depends="init-ivy">
+    	
+    	<delete file="${dist.dir}/ivy.xml" quiet="true" />
+    	<delete file="${dist.dir}/cas.pom" quiet="true" />
+    	
+    	<ivy:makepom 
+    	    ivyfile="${basedir}/ivy.xml" 
+    	    pomfile="${dist.dir}/cas.pom"/>
+    	
+        <ivy:publish resolver="nci-mvn-nexus"
+                     pubrevision="${pub.revision}"
+                     overwrite="true"
+                     organisation="${organization}"
+                     module="${module}"
+                     status="release"
+                     revision="${revision}"
+                     artifactspattern="${dist.dir}/[artifact].[ext]"
+        			 forcedeliver="true"/>
+    </target>
 
 </project>

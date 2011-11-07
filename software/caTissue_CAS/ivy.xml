@@ -1,6 +1,12 @@
 <ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
     
-    <info organisation="gov.nih.nci.catissue" module="cas" revision="${CAS.project.version}"/>
+    <info organisation="gov.nih.nci.catissue" module="cas" revision="${CAS.project.version}" status="integration"/>
+    
+    <publications>
+    	<artifact name="cas" type="pom" ext="pom" />
+		<artifact name="casclient" ext="jar" type="jar" />
+		<artifact name="cas" ext="war" type="war" />
+	</publications>
     
     <dependencies>
 
