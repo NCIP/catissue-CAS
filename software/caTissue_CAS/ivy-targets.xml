@@ -43,15 +43,19 @@
     	<ivy:settings file="${basedir}/ivysettings.xml" id="catissue.ivy.instance"/>  
     	<property name="loaded.ivy.settings" value="true" />
     </target>
+	
+	<target name="prepare-to-publish" depends="init-ivy">
 
-    <target name="publish" depends="init-ivy">
-
-    	<delete file="${dist.dir}/ivy.xml" quiet="true" />
+		<delete file="${dist.dir}/ivy.xml" quiet="true" />
     	<delete file="${dist.dir}/cas.pom" quiet="true" />
-		
+    	
     	<ivy:makepom 
     	    ivyfile="${basedir}/ivy.xml" 
     	    pomfile="${dist.dir}/cas.pom"/>
+
+	</target>	
+
+    <target name="publish" depends="prepare-to-publish">
     	
         <ivy:publish resolver="localResolver"
                      pubrevision="${pub.revision}"
@@ -63,14 +67,7 @@
                      artifactspattern="${dist.dir}/[artifact].[ext]"/>
     </target>
 
-    <target name="publish-nexus" depends="init-ivy">
-    	
-    	<delete file="${dist.dir}/ivy.xml" quiet="true" />
-    	<delete file="${dist.dir}/cas.pom" quiet="true" />
-    	
-    	<ivy:makepom 
-    	    ivyfile="${basedir}/ivy.xml" 
-    	    pomfile="${dist.dir}/cas.pom"/>
+    <target name="publish-nexus" depends="prepare-to-publish">
     	
         <ivy:publish resolver="nci-mvn-nexus"
                      pubrevision="${pub.revision}"
