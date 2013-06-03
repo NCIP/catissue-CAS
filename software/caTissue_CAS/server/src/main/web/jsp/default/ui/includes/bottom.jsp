@@ -1,3 +1,13 @@
+<%--L
+   Copyright Washington University in St. Louis
+   Copyright SemanticBits
+   Copyright Persistent Systems
+   Copyright Krishagni
+
+   Distributed under the OSI-approved BSD 3-Clause License.
+   See http://ncip.github.com/catissue_CAS/LICENSE.txt for details.
+L--%>
+
                 </div>
                 <div id="footer" class="fl-panel fl-note fl-bevel-white fl-font-size-80">
                     <div>

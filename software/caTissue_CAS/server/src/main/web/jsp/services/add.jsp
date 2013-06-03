@@ -1,3 +1,13 @@
+<%--L
+   Copyright Washington University in St. Louis
+   Copyright SemanticBits
+   Copyright Persistent Systems
+   Copyright Krishagni
+
+   Distributed under the OSI-approved BSD 3-Clause License.
+   See http://ncip.github.com/catissue_CAS/LICENSE.txt for details.
+L--%>
+
 <%@include file="includes/top.jsp"%>
 
 <form:form action="${registeredService.id ge 0 ? 'edit.html' : 'add.html'}?id=${fn:escapeXml(param.id)}" cssClass="v" cssStyle="width:75%;" commandName="${commandName}">
