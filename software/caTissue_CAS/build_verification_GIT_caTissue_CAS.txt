@@ -1,0 +1,338 @@
+Buildfile: C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\build.xml
+
+clean:
+
+download-ivy:
+    [mkdir] Created dir: C:\Users\konkapv\.ivy
+     [echo] Installing ivy...
+      [get] Getting: http://repo1.maven.org/maven2/org/apache/ivy/ivy/2.0.0/ivy-2.0.0.jar
+      [get] To: C:\Users\konkapv\.ivy\ivy.jar
+
+init-ivy:
+
+resolve:
+No ivy:settings found for the default reference 'ivy.instance'.  A default instance will be used
+[ivy:retrieve] :: Ivy 2.0.0 - 20090108225011 :: http://ant.apache.org/ivy/ ::
+:: loading settings :: file = C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivysettings.xml
+[ivy:retrieve] :: resolving dependencies :: gov.nih.nci.catissue#cas;2.1.1-SNAPSHOT
+[ivy:retrieve] 	confs: [default]
+[ivy:retrieve] 	found local#caTissue_CAS;1.0 in local-repo-jars
+[ivy:retrieve] 	found gov.nih.nci.catissue#security-manager;1.1.7.3-SNAPSHOT in nci-mvn-nexus
+[ivy:retrieve] 	found gov.nih.nci.catissue#commons;1.3.1-SNAPSHOT in nci-mvn-nexus
+[ivy:retrieve] 	found gov.nih.nci.catissue#idp-authentication-manager;1.0-SNAPSHOT in nci-mvn-nexus
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\spring-security-config-3.0.1.RELEASE.jar ...
+[ivy:retrieve] .... (156kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!spring-security-config-3.0.1.RELEASE.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\inspektr-error-1.0.0.GA.jar ...
+[ivy:retrieve] .. (5kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!inspektr-error-1.0.0.GA.jar (7ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\commons-collections-3.2.1.jar ...
+[ivy:retrieve] .......... (561kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!commons-collections-3.2.1.jar (10ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\spring-context-3.0.1.RELEASE.jar ...
+[ivy:retrieve] ............ (641kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!spring-context-3.0.1.RELEASE.jar (10ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\hibernate-core-3.5.0-CR-2.jar ...
+[ivy:retrieve] ........................................ (2458kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!hibernate-core-3.5.0-CR-2.jar (16ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\customEncoder.jar ...
+[ivy:retrieve] .. (3kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!customEncoder.jar (9ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\ant-contrib.jar ...
+[ivy:retrieve] .... (189kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!ant-contrib.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\aspectjweaver-1.6.7.jar ...
+[ivy:retrieve] ............................ (1700kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!aspectjweaver-1.6.7.jar (9ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\spring-security-web-3.0.1.RELEASE.jar ...
+[ivy:retrieve] ..... (224kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!spring-security-web-3.0.1.RELEASE.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\dom4j-1.6.1.jar ...
+[ivy:retrieve] ...... (306kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!dom4j-1.6.1.jar (10ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\commons-logging-1.0.4.jar ...
+[ivy:retrieve] .. (37kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!commons-logging-1.0.4.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\spring-tx-3.0.1.RELEASE.jar ...
+[ivy:retrieve] ..... (223kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!spring-tx-3.0.1.RELEASE.jar (7ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\commons-logging-api.jar ...
+[ivy:retrieve] .. (21kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!commons-logging-api.jar (7ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\hibernate-commons-annotations-3.2.0.Beta1.jar ...
+[ivy:retrieve] ... (69kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!hibernate-commons-annotations-3.2.0.Beta1.jar (9ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\person-directory-impl-1.5.0-RC6.jar ...
+[ivy:retrieve] ... (105kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!person-directory-impl-1.5.0-RC6.jar (9ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\hibernate-annotations-3.5.0-CR-2.jar ...
+[ivy:retrieve] ....... (350kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!hibernate-annotations-3.5.0-CR-2.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\spring-aop-3.0.1.RELEASE.jar ...
+[ivy:retrieve] ...... (312kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!spring-aop-3.0.1.RELEASE.jar (9ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\spring-jdbc-3.0.1.RELEASE.jar ...
+[ivy:retrieve] ....... (368kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!spring-jdbc-3.0.1.RELEASE.jar (11ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\commons-jexl-1.1.jar ...
+[ivy:retrieve] .... (129kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!commons-jexl-1.1.jar (9ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\spring-beans-3.0.1.RELEASE.jar ...
+[ivy:retrieve] .......... (534kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!spring-beans-3.0.1.RELEASE.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\mysql-connector-java-5.0.8.jar ...
+[ivy:retrieve] .......... (528kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!mysql-connector-java-5.0.8.jar (10ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\servlet.jar ...
+[ivy:retrieve] ... (75kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!servlet.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\spring-webmvc-3.0.1.RELEASE.jar ...
+[ivy:retrieve] ........ (388kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!spring-webmvc-3.0.1.RELEASE.jar (10ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\opensaml-1.1b.jar ...
+[ivy:retrieve] .... (152kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!opensaml-1.1b.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\standard-1.1.2.jar ...
+[ivy:retrieve] ........ (384kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!standard-1.1.2.jar (9ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\spring-security-cas-client-3.0.1.RELEASE.jar ...
+[ivy:retrieve] .. (18kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!spring-security-cas-client-3.0.1.RELEASE.jar (11ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\activation-1.1.jar ...
+[ivy:retrieve] .. (61kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!activation-1.1.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\cas-server-support-jdbc-3.4.2.1.jar ...
+[ivy:retrieve] .. (7kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!cas-server-support-jdbc-3.4.2.1.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\mockrunner.jar ...
+[ivy:retrieve] ..... (197kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!mockrunner.jar (12ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\spring-webflow-2.0.8.RELEASE.jar ...
+[ivy:retrieve] ......... (507kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!spring-webflow-2.0.8.RELEASE.jar (23ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\clm.jar ...
+[ivy:retrieve] ... (73kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!clm.jar (9ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\spring-binding-2.0.8.RELEASE.jar ...
+[ivy:retrieve] .... (153kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!spring-binding-2.0.8.RELEASE.jar (9ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\spring-core-3.0.1.RELEASE.jar ...
+[ivy:retrieve] ....... (347kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!spring-core-3.0.1.RELEASE.jar (19ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\xml-apis-1.0.b2.jar ...
+[ivy:retrieve] ... (106kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!xml-apis-1.0.b2.jar (7ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\aopalliance-1.0.jar ...
+[ivy:retrieve] .. (4kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!aopalliance-1.0.jar (7ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\aspectjrt-1.6.7.jar ...
+[ivy:retrieve] ... (113kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!aspectjrt-1.6.7.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\lbRuntime.jar ...
+[ivy:retrieve] ................................................................................................................................................................................................................................................................................................................................................................................................... (24695kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!lbRuntime.jar (36ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\inspektr-support-spring-1.0.0.GA.jar ...
+[ivy:retrieve] .. (13kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!inspektr-support-spring-1.0.0.GA.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\commons-dbcp-1.2.1.jar ...
+[ivy:retrieve] ... (105kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!commons-dbcp-1.2.1.jar (10ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\xmldsig-1.0.jar ...
+[ivy:retrieve] .... (156kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!xmldsig-1.0.jar (7ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\ognl-2.7.3.jar ...
+[ivy:retrieve] ..... (234kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!ognl-2.7.3.jar (9ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\j2ee.jar ...
+[ivy:retrieve] ............................ (1688kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!j2ee.jar (11ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\inspektr-common-1.0.0.GA.jar ...
+[ivy:retrieve] .. (6kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!inspektr-common-1.0.0.GA.jar (7ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\commons-codec-1.4.jar ...
+[ivy:retrieve] .. (56kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!commons-codec-1.4.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\spring-asm-3.0.1.RELEASE.jar ...
+[ivy:retrieve] .. (51kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!spring-asm-3.0.1.RELEASE.jar (7ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\csmapi.jar ...
+[ivy:retrieve] ..... (216kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!csmapi.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\jaxb-api-2.1.jar ...
+[ivy:retrieve] ... (87kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!jaxb-api-2.1.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\ehcache-1.2.3.jar ...
+[ivy:retrieve] ..... (203kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!ehcache-1.2.3.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\perf4j-0.9.12-log4jonly.jar ...
+[ivy:retrieve] ... (88kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!perf4j-0.9.12-log4jonly.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\inspektr-audit-1.0.0.GA.jar ...
+[ivy:retrieve] .. (16kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!inspektr-audit-1.0.0.GA.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\antlr-2.7.6.jar ...
+[ivy:retrieve] ........ (433kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!antlr-2.7.6.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\javassist-3.7.ga.jar ...
+[ivy:retrieve] .......... (531kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!javassist-3.7.ga.jar (9ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\cas-server-core-3.4.2.1.jar ...
+[ivy:retrieve] ....... (377kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!cas-server-core-3.4.2.1.jar (9ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\junit.jar ...
+[ivy:retrieve] ... (118kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!junit.jar (7ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\jstl-1.1.2.jar ...
+[ivy:retrieve] .. (20kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!jstl-1.1.2.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\spring-expression-3.0.1.RELEASE.jar ...
+[ivy:retrieve] .... (152kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!spring-expression-3.0.1.RELEASE.jar (9ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\spring-security-core-3.0.1.RELEASE.jar ...
+[ivy:retrieve] ...... (297kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!spring-security-core-3.0.1.RELEASE.jar (7ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\xmlsec-1.4.3.jar ...
+[ivy:retrieve] ........ (437kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!xmlsec-1.4.3.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\quartz-1.6.1.jar ...
+[ivy:retrieve] ........ (434kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!quartz-1.6.1.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\jdom-1.0.jar ...
+[ivy:retrieve] .... (149kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!jdom-1.0.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\log4j-1.2.15.jar ...
+[ivy:retrieve] ....... (382kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!log4j-1.2.15.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\jcl-over-slf4j-1.5.8.jar ...
+[ivy:retrieve] .. (16kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!jcl-over-slf4j-1.5.8.jar (10ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\commons-httpclient-3.0.1.jar ...
+[ivy:retrieve] ...... (273kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!commons-httpclient-3.0.1.jar (9ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\ejb3-persistence.jar ...
+[ivy:retrieve] .. (50kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!ejb3-persistence.jar (9ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\spring-context-support-3.0.1.RELEASE.jar ...
+[ivy:retrieve] ... (97kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!spring-context-support-3.0.1.RELEASE.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\spring-web-3.0.1.RELEASE.jar ...
+[ivy:retrieve] ....... (351kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!spring-web-3.0.1.RELEASE.jar (9ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\person-directory-api-1.5.0-RC6.jar ...
+[ivy:retrieve] .. (3kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!person-directory-api-1.5.0-RC6.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\slf4j-api-1.5.8.jar ...
+[ivy:retrieve] .. (22kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!slf4j-api-1.5.8.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\jaxb-impl-2.1.3.jar ...
+[ivy:retrieve] .............. (823kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!jaxb-impl-2.1.3.jar (10ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\slf4j-log4j12-1.5.8.jar ...
+[ivy:retrieve] .. (9kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!slf4j-log4j12-1.5.8.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\hibernate-validator-4.0.2.GA.jar ...
+[ivy:retrieve] ..... (221kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!hibernate-validator-4.0.2.GA.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\commons-lang-2.4.jar ...
+[ivy:retrieve] ..... (255kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!commons-lang-2.4.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\spring-js-2.0.8.RELEASE.jar ...
+[ivy:retrieve] .................... (1177kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!spring-js-2.0.8.RELEASE.jar (9ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\stax-api-1.0-2.jar ...
+[ivy:retrieve] .. (22kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!stax-api-1.0-2.jar (10ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\cas-client-core-3.1.10.jar ...
+[ivy:retrieve] .. (63kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!cas-client-core-3.1.10.jar (8ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\spring-orm-3.0.1.RELEASE.jar ...
+[ivy:retrieve] ....... (323kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!spring-orm-3.0.1.RELEASE.jar (9ms)
+[ivy:retrieve] downloading C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\ivy.local.jars\validation-api-1.0.0.GA.jar ...
+[ivy:retrieve] .. (46kB)
+[ivy:retrieve] 	[SUCCESSFUL ] local#caTissue_CAS;1.0!validation-api-1.0.0.GA.jar (8ms)
+[ivy:retrieve] downloading https://ncimvn.nci.nih.gov/nexus/content/repositories/snapshots/gov/nih/nci/catissue/security-manager/1.1.7.3-SNAPSHOT/security-manager-1.1.7.3-SNAPSHOT.pom ...
+[ivy:retrieve] .. (1kB)
+[ivy:retrieve] .. (0kB)
+[ivy:retrieve] 	[SUCCESSFUL ] gov.nih.nci.catissue#security-manager;1.1.7.3-SNAPSHOT!security-manager.pom (759ms)
+[ivy:retrieve] downloading https://ncimvn.nci.nih.gov/nexus/content/repositories/snapshots/gov/nih/nci/catissue/security-manager/1.1.7.3-SNAPSHOT/SecurityManager-1.1.7.3-SNAPSHOT.jar ...
+[ivy:retrieve] ................ (55kB)
+[ivy:retrieve] .. (0kB)
+[ivy:retrieve] 	[SUCCESSFUL ] gov.nih.nci.catissue#security-manager;1.1.7.3-SNAPSHOT!SecurityManager.jar (977ms)
+[ivy:retrieve] downloading https://ncimvn.nci.nih.gov/nexus/content/repositories/snapshots/gov/nih/nci/catissue/commons/1.3.1-SNAPSHOT/TreeApplet-1.3.1-SNAPSHOT.jar ...
+[ivy:retrieve] .... (9kB)
+[ivy:retrieve] .. (0kB)
+[ivy:retrieve] 	[SUCCESSFUL ] gov.nih.nci.catissue#commons;1.3.1-SNAPSHOT!TreeApplet.jar (817ms)
+[ivy:retrieve] downloading https://ncimvn.nci.nih.gov/nexus/content/repositories/snapshots/gov/nih/nci/catissue/commons/1.3.1-SNAPSHOT/washu-commons-1.3.1-SNAPSHOT.jar ...
+[ivy:retrieve] .................................................................................................................... (455kB)
+[ivy:retrieve] .. (0kB)
+[ivy:retrieve] 	[SUCCESSFUL ] gov.nih.nci.catissue#commons;1.3.1-SNAPSHOT!washu-commons.jar (1013ms)
+[ivy:retrieve] downloading https://ncimvn.nci.nih.gov/nexus/content/repositories/snapshots/gov/nih/nci/catissue/commons/1.3.1-SNAPSHOT/washu-commons-src-1.3.1-SNAPSHOT.jar ...
+[ivy:retrieve] .................................................................................................. (381kB)
+[ivy:retrieve] .. (0kB)
+[ivy:retrieve] 	[SUCCESSFUL ] gov.nih.nci.catissue#commons;1.3.1-SNAPSHOT!washu-commons-src.jar (995ms)
+[ivy:retrieve] downloading https://ncimvn.nci.nih.gov/nexus/content/repositories/snapshots/gov/nih/nci/catissue/commons/1.3.1-SNAPSHOT/washu-commons-1.3.1-SNAPSHOT.pom ...
+[ivy:retrieve] .. (0kB)
+[ivy:retrieve] .. (0kB)
+[ivy:retrieve] 	[SUCCESSFUL ] gov.nih.nci.catissue#commons;1.3.1-SNAPSHOT!washu-commons.pom (796ms)
+[ivy:retrieve] downloading https://ncimvn.nci.nih.gov/nexus/content/repositories/snapshots/gov/nih/nci/catissue/idp-authentication-manager/1.0-SNAPSHOT/IDPAuthenticationManager-1.0-SNAPSHOT.jar ...
+[ivy:retrieve] .............. (44kB)
+[ivy:retrieve] .. (0kB)
+[ivy:retrieve] 	[SUCCESSFUL ] gov.nih.nci.catissue#idp-authentication-manager;1.0-SNAPSHOT!IDPAuthenticationManager.jar (1014ms)
+[ivy:retrieve] downloading https://ncimvn.nci.nih.gov/nexus/content/repositories/snapshots/gov/nih/nci/catissue/idp-authentication-manager/1.0-SNAPSHOT/idp-authentication-manager-1.0-SNAPSHOT.pom ...
+[ivy:retrieve] .. (1kB)
+[ivy:retrieve] .. (0kB)
+[ivy:retrieve] 	[SUCCESSFUL ] gov.nih.nci.catissue#idp-authentication-manager;1.0-SNAPSHOT!idp-authentication-manager.pom (794ms)
+[ivy:retrieve] :: resolution report :: resolve 4643ms :: artifacts dl 8005ms
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   4   |   4   |   4   |   0   ||   85  |   85  |
+	---------------------------------------------------------------------
+[ivy:retrieve] 
+[ivy:retrieve] 
+[ivy:retrieve] :: USE VERBOSE OR DEBUG MESSAGE LEVEL FOR MORE DETAILS
+[ivy:retrieve] :: retrieving :: gov.nih.nci.catissue#cas
+[ivy:retrieve] 	confs: [default]
+[ivy:retrieve] 	85 artifacts copied, 0 already retrieved (47188kB/379ms)
+
+postResolve:
+
+compile_cas_client_jar:
+    [mkdir] Created dir: C:\DEV\GIT-WORK\catissue\catissue_CAS\software\target\temp\classes
+    [javac] Compiling 21 source files to C:\DEV\GIT-WORK\catissue\catissue_CAS\software\target\temp\classes
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+build_cas_client_jar:
+   [delete] Deleting: C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\dist\casclient.jar
+      [jar] Building jar: C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\dist\casclient.jar
+     [copy] Copying 1 file to C:\DEV\GIT-WORK\catissue\catissue_CAS\software\local-ivy-repo
+
+compile_cas_server_war:
+   [delete] Deleting directory C:\DEV\GIT-WORK\catissue\catissue_CAS\software\target\temp\classes
+    [mkdir] Created dir: C:\DEV\GIT-WORK\catissue\catissue_CAS\software\target\temp\classes
+    [javac] Compiling 2 source files to C:\DEV\GIT-WORK\catissue\catissue_CAS\software\target\temp\classes
+
+build_war:
+    [mkdir] Created dir: C:\DEV\GIT-WORK\catissue\catissue_CAS\software\target\temp\temp_cas
+    [unwar] Expanding: C:\DEV\GIT-WORK\catissue\catissue_CAS\software\local-ivy-repo\cas.war into C:\DEV\GIT-WORK\catissue\catissue_CAS\software\target\temp\temp_cas
+     [copy] Copying 68 files to C:\DEV\GIT-WORK\catissue\catissue_CAS\software\target\temp\temp_cas
+     [copy] Copying 7 files to C:\DEV\GIT-WORK\catissue\catissue_CAS\software\target\temp\temp_cas\css\images
+     [copy] Copying 26 files to C:\DEV\GIT-WORK\catissue\catissue_CAS\software\target\temp\temp_cas\WEB-INF\view\jsp
+     [copy] Copying 2 files to C:\DEV\GIT-WORK\catissue\catissue_CAS\software\target\temp\temp_cas\WEB-INF
+     [copy] Copying 82 files to C:\DEV\GIT-WORK\catissue\catissue_CAS\software\target\temp\temp_cas\WEB-INF\lib
+     [copy] Copying 2 files to C:\DEV\GIT-WORK\catissue\catissue_CAS\software\target\temp\temp_cas\WEB-INF\classes
+      [war] Building war: C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\dist\cas.war
+      [war] Warning: selected war files include a second WEB-INF/web.xml which will be ignored.
+      [war] The duplicate entry is at C:\DEV\GIT-WORK\catissue\catissue_CAS\software\target\temp\temp_cas\WEB-INF\web.xml
+      [war] The file that will be used is C:\DEV\GIT-WORK\catissue\catissue_CAS\software\caTissue_CAS\conf\web.xml
+     [copy] Copying 1 file to C:\DEV\GIT-WORK\catissue\catissue_CAS\software\local-ivy-repo
+
+dist:
+
+BUILD SUCCESSFUL
+Total time: 36 seconds
