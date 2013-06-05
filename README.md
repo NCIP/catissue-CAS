@@ -8,7 +8,7 @@ CAS is an authentication system originally created by Yale University to provide
 The caTissue CAS is distributed under the BSD 3-Clause License.
 Please see the NOTICE and LICENSE files for details.
 
-You will find more details about the caTissue Migration Tool in the following links:
+You will find more details about the caTissue CAS Tool in the following links:
  * [caTissue Tools Home Page] (https://wiki.nci.nih.gov/display/caTissue/caTissue+Tools+Wiki)
  * [caTissue Home] (https://wiki.nci.nih.gov/display/caTissuedoc/caTissue+Documentation+Wiki)
  * [NCI OSDI] (https://wiki.nci.nih.gov/display/caBIGCommunityCode/CBIIT+Open+Source+Development+Initiative)
