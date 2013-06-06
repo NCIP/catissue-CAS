@@ -13,7 +13,7 @@ You will find more details about the caTissue CAS Tool in the following links:
  * [caTissue Home] (https://wiki.nci.nih.gov/display/caTissuedoc/caTissue+Documentation+Wiki)
  * [NCI OSDI] (https://wiki.nci.nih.gov/display/caBIGCommunityCode/CBIIT+Open+Source+Development+Initiative)
  * [Issue Tracker] (https://bugzilla.wustl.edu/bugzilla/)
- * [Code Repository] (https://github.com/NCIP/catissue_CAS)
+ * [Code Repository] (https://github.com/NCIP/catissue-CAS)
  * [Single Sign On Support] (https://wiki.nci.nih.gov/display/caTissuedoc/9+-+Single+Sign+On+Support+v1.2)
 
 Please join us in further developing and improving the caTissue CAS Tool.

@@ -5,7 +5,7 @@
    Copyright Krishagni
 
    Distributed under the OSI-approved BSD 3-Clause License.
-   See http://ncip.github.com/catissue_CAS/LICENSE.txt for details.
+   See http://ncip.github.com/catissue-CAS/LICENSE.txt for details.
 L--%>
 
 <%@ page session="false" %><%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %><%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %><cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
