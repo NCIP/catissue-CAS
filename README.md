@@ -3,6 +3,8 @@ Welcome to the caTissue Common Authentication Service (CAS) Project!
 
 caTissue Suite uses JASIG CAS (Common Authentication Service) to provide Single Sign-On support with other applications. The caTissue application uses the HTTP request filter provided by CAS to intercept all requests and redirect the user to the Login page in case the user is not already logged in.
 
+caTissue CAS is an Open Source project written in Java using JASIG CAS, Hibernate, Spring Framework, JAXB, Apache Commons, caCORE CSM, Apache Ant.
+
 CAS is an authentication system originally created by Yale University to provide a trusted way for an application to authenticate a user. CAS became a Jasig project in December 2004.
 
 The caTissue CAS is distributed under the BSD 3-Clause License.
