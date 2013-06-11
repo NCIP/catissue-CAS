@@ -17,4 +17,7 @@ You will find more details about the caTissue CAS Tool in the following links:
 
 Please join us in further developing and improving the caTissue CAS Tool.
 
+## Required Software to build
+* Java 1.6.x
+* Ant 1.7.x
  
