@@ -12,7 +12,7 @@ Please see the NOTICE and LICENSE files for details.
 
 You will find more details about the caTissue CAS Tool in the following links:
  * [caTissue Tools Wiki] (https://wiki.nci.nih.gov/x/uIH_Ag)
- * [caTissue wiki] (https://wiki.nci.nih.gov/x/uJT9AQ)
+ * [caTissue Documentation Wiki] (https://wiki.nci.nih.gov/x/uJT9AQ)
  * [Issue Tracker] (https://bugzilla.wustl.edu/bugzilla/)
  * [Code Repository] (https://github.com/NCIP/catissue-CAS)
  * [Single Sign On Support] (https://wiki.nci.nih.gov/display/caTissuedoc/9+-+Single+Sign+On+Support+v1.2)
